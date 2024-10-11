@@ -1,0 +1,23 @@
+Version identifier: 22.1.0.0 | 2022-03-09 | 1a383f8ce
+CPXPARAM_TimeLimit                               600
+Tried aggregator 1 time.
+LP Presolve eliminated 1285 rows and 157 columns.
+Aggregator did 60 substitutions.
+Reduced LP has 1781 rows, 1513 columns, and 4389 nonzeros.
+Presolve time = 0.00 sec. (2.69 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Perturbation started.
+Iteration:   101   Dual objective     =             0.000000
+Iteration:   249   Dual objective     =             0.000812
+Iteration:   380   Dual objective     =            13.500794
+Iteration:   526   Dual objective     =           100.501146
+Iteration:   655   Dual objective     =           366.502139
+Iteration:   805   Dual objective     =           498.002565
+Iteration:   941   Dual objective     =           631.002910
+Removing perturbation.
+Solution status = Optimal
+Solution value  = 669.5
+Maximum bound violation = 0
+Solution RunTime:0

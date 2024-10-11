@@ -13,14 +13,10 @@
 int main()
 {
 std::string fileName_ = std::string("problem.lp");
-
-    // std::string fileName = tmpFile.substr(0, tmpFile.size()-4) + "_" + _clkPhase + ".mps" ;
-    //std::string fileName_ = tmpFile.substr(0, tmpFile.size() - 4) + ".mps";//".lp";
     char *fileName = const_cast<char *>(fileName_.c_str());
 
     std::string outputFile_ = fileName_.substr(0, fileName_.size() - 3) + "_sol.txt";
     char *outputFile = const_cast<char *>(outputFile_.c_str());
-    //std::cout << "--Solving LP Problem in " << fileName << std::endl;
     remove(outputFile_.c_str());
     char inFile[fileName_.size() + 1];
     strcpy(inFile, fileName_.c_str());
@@ -65,10 +61,9 @@ std::string fileName_ = std::string("problem.lp");
         outF.close();
         
 
-        try {     // basis may not exist
+        try {     
             IloCplex::BasisStatusArray cstat(env);
             cplex.getBasisStatuses(cstat, var);
-            //env.out() << "Basis statuses  = " << cstat << std::endl;
         } catch (...) {
         }
 
